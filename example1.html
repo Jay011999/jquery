@@ -1,1 +1,58 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery cases</title>
+    <style>
+        #circle{
+            width:200px;
+            height:200px;
+            background-color: yellowgreen;
+            border-radius: 50%;
+        }
+        #square{
+            width:200px;
+            height:200px;
+            background-color: rebeccapurple;
+            margin: 10px;
+        }
+
+        #triangle   {
+            width: 0;
+      height: 0;
+      border-left: 100px solid transparent;
+      border-right: 100px solid transparent;
+      border-bottom: 200px solid red;
+        }
+    </style>
+    <script src="jquery.js"></script >
+</head>
+<body>
+    <div id="circle"></div>
+    <div id="square"></div>
+    <div id="triangle"></div>
+    <p>previous text</p>
+    <iframe src="https://css-tricks.com/the-shapes-of-css/"></iframe>
+    <script>
+        $("#circle").click(function(){
+            console.log("circle clicked");
+        });
+        $("#square").click(function(){
+           $('#square').css("background-color","red");
+           $('#square').css("width","400px")
+        });
+        $("#triangle").click(function(){
+            console.log("triangle clicked");
+        });
+        $("p").click(function(){
+        $(this).fadeOut();
+        })
+        $("iframe").hover(function(){
+            $("iframe").attr("src","https://www.bbc.com/")
+        })
+    </script>
+</body>
+</html>
