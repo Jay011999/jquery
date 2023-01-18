@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex expression example</title>
+
+    <script src="jquery.js"></script >
+</head>
+<body>
+    
+    <div id="circle"></div>
+    <script>
+      var str="This is regular expression";
+      var regex=/regular/g;   
+      var result=str.match(regex);
+      console.log(result);
+      var check=/regulars/;
+      var result1=str.match(check);
+      console.log(result1);
+    </script>
+    
+</body>
+</html>
+
+  <!--  var regex=/regular/i; >>i is for removing cases from char/letters
+        var regex=/regular/g; >> g for occurences from char/letters -->
